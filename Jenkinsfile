@@ -1,13 +1,13 @@
 pipeline {
   agent any
   stages {
-    stage('compile') {
+    stage('Build') {
       steps {
         sh './mvnw clean compile'
       }
     }
 
-    stage('unit test') {
+    stage('Unit Test') {
       steps {
         sh './mvnw test'
       }
