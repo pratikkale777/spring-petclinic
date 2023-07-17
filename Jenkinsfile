@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('unit test') {
+      steps {
+        sh './mvnw test'
+      }
+    }
+
   }
 }
